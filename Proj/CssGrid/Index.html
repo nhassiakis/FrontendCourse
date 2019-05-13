@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css Grids</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            /*  
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            */
+            grid-gap: 1em;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum voluptates totam expedita ea dignissimos velit est ratione quod. Enim error, dolor inventore culpa ducimus repellendus incidunt dolorum obcaecati, repudiandae pariatur a dolore doloremque corrupti deleniti nisi temporibus minima corporis ea quaerat nihil beatae. Porro quae harum cum corrupti exercitationem ipsam atque molestiae vitae error? Quibusdam aliquid impedit corrupti magni vel culpa excepturi consequuntur quos tempore, ducimus officia vero blanditiis, debitis cupiditate eum id harum nisi voluptate aspernatur illum voluptas!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro modi cum incidunt. Possimus neque, harum tempore, totam enim nobis sint veniam necessitatibus accusamus commodi, laudantium saepe excepturi culpa? Reprehenderit, cumque.
+        </div>
+        <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus earum voluptates totam expedita ea dignissimos velit est ratione quod. Enim error, dolor inventore culpa ducimus repellendus incidunt dolorum obcaecati, repudiandae pariatur a dolore doloremque corrupti deleniti nisi temporibus minima corporis ea quaerat nihil beatae. Porro quae harum cum corrupti exercitationem ipsam atque molestiae vitae error? Quibusdam aliquid impedit corrupti magni vel culpa excepturi consequuntur quos tempore, ducimus officia vero blanditiis, debitis cupiditate eum id harum nisi voluptate aspernatur illum voluptas!
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro modi cum incidunt. Possimus neque, harum tempore, totam enim nobis sint veniam necessitatibus accusamus commodi, laudantium saepe excepturi culpa? Reprehenderit, cumque.
+        </div>
+    </div>
+</body>
+</html>
