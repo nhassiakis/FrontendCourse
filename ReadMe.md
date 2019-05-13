@@ -1,1 +1,1 @@
-**Frontend projects and smaller tasks for practise
+***Frontend projects and smaller tasks for practise***
