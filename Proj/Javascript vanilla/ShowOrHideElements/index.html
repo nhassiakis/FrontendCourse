@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+    function showHide() {
+        var hiddenInputs = document.getElementsByClassName("hidden")
+        var checkbox = document.getElementById("chk");
+
+        for (let i = 0; i < i != hiddenInputs.length; i++) {
+            if (checkbox.checked) {
+                hiddenInputs[i].style.display = "block";
+            }
+            else {
+                hiddenInputs[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <input type="checkbox" name="chckbox" id="chk" onclick="showHide()" />
+        <label for="chk">Click to Show/Hide</label>
+
+        <br>
+        <label class="hidden">Name:</label><input type="text" name="name" class="hidden" />
+        <br>
+        <label class="hidden">Email:</label><input type="text" name="Email" class="hidden" />
+
+    </form>
+</body>
+</html>
